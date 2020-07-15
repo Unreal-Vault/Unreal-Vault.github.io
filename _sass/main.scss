@@ -1,0 +1,62 @@
+
+  
+  .nav-pills > li a {
+    color: #ffffff !important;
+  }
+
+  .nav-pills > li a:hover {
+    color: #00aeff !important;
+  }
+
+//   *[id]:before { 
+//     display: block; 
+//     content: " "; 
+//     height: 75px; 
+//     visibility: hidden; 
+//   }
+
+body {
+    position: relative;
+}
+
+ 
+ .carousel-inner .item,
+ .carousel-inner .item.active,
+ .carousel-inner .item img {
+     margin: auto;
+     padding: 5550px;
+ }
+
+ .carousel-inner>.item {
+    width: 500%;
+
+}
+ 
+img {
+    max-width: none;
+}
+ 
+ /**
+  * Set header attributes
+  */
+ .site-header{
+     text-transform: uppercase;
+ }
+
+ .page-title {
+    text-align: left;
+    font-size: 3em;
+ }
+ 
+
+
+.safe-icon {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+
+}
+
+ 
+ 

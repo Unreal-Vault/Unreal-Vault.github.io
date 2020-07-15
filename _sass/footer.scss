@@ -1,0 +1,40 @@
+footer {
+  margin-top: 3em;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  min-height: $footer-min-height;
+  font-size: 1.1em;
+  opacity: 1;
+  background-color: $footer-color;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 50;
+}
+
+.socialIcons {
+    display: block;
+}
+
+
+
+
+.fa-twitter {
+  color: black;
+  z-index: 410;
+}
+
+.fa-linkedin {
+  color: black;
+}
+
+.fa-youtube {
+  color: black;
+}
+
+.fa-github {
+    color:black;
+}
+

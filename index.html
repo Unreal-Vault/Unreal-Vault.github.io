@@ -1,0 +1,165 @@
+---
+layout: default
+title: Vault
+---
+
+
+
+<div class="container-fluid block block-zone-1" id="home">
+    <div class="container py-3">
+        <img src="assets/images/Safe_WebIcon.svg" class="safe-icon" alt="safe icon">
+        <h1> THE VAULT </h1>
+        <h3> <small class="text-muted"> Unreal Engine Asset Management Library </small> </h3>
+        <br>
+        <h3 class="font-weight-light"> Your own personal asset cloud </h3>
+        <p class="text-secondary"> Back up all your favourite assets to your local machine, server or to a cloud synced folder </p>
+        <p class="text-secondary"> Generate asset packs that contain all dependancies, with detailed metadata </p>
+        <p class="text-secondary"> Browse and Load your asset packs into any Unreal project </p>
+    </div>
+
+    <div class="container py-3">
+        <h3> Progress Update (24 July 2019): </h3>
+        <h5> Publisher: </h5>
+        <p> New screenshot method using a dedicated micro world within the UI is coming soon </p>
+        <p> The new mini-world will allow you to orbit, frame-up and take beauty shots of your product for better thumbnails and asset shots </p>
+        <p> Mini-worlds will have global JSON design presets to keep a uniform screenshot style throughout all users in your group (I.E background colour and orbit angle </p>
+        <p> With the mini-world integration, a big refresh of the publisher UI is coming to bring it up to a more profesional and clean layout </p>
+        <p> More details are moving into the DetailCustomisation rather than custom slate to uniform the design to better reflect traditional UE4 UI </p>
+       
+
+        <h5> Browser: </h5>
+        <p> Browser is being updated to support multiple screenshots per asset, along with a fullscreen asset view once you select an asset in the browser </p>
+        <p> Multiple Images can be browsed via a html lightbox style UI </p>
+        <p> View options moved to a dropdown to match the style of the Content Browser </p>
+
+        <h5> Scripting: </h5>
+        <p> Python and Blueprint EditorScripting library support is expanding every day </p>
+        <p> Publishing via scripting is now mostly complete, with new support for bounds aware automated camera zoom in the mini-world to automate that step </p>
+    
+    
+    
+    </div>
+</div>
+
+
+<!-- <div class="container-fluid block block-zone-1">
+    <div class="container p-3">
+       
+    </div>
+</div> -->
+
+<!-- Packager  -->
+
+<div class="container-fluid block block-zone-box-2" id="packager">
+    <div class="container py-3" style="height: 35rem">
+           
+        <div class="row h-100">
+            <div class="col my-4">
+
+                    <a href="assets/images/PackagingUI.jpg" data-toggle="lightbox">
+                        <img src="assets/images/PackagingUI_Mid.jpg" class="rounded img-fluid" alt="Publisher UI Example">
+                    </a>
+
+
+            </div>
+
+            <div class="col my-4">
+                <h3 class="font-weight-light text-light"> Publishing assets made easy through Vault Packager (Publishing UI Work-In-Progress) </h3>
+                <p> Easily package whole groups of assets, with all the dependancies, through a comprehensive UI, with full metadata and tagging support </p>
+                <p> Make organising and searching easy through tags. Add custom tags or re-use existing ones. The Tag pool is shared with all your team, and any new tags you make get added to the pool </p>
+                <p> Capture thumbnails within the publisher, utilise "screengrap" maps automatically to get clean uniformity to your thumbs. Through settings, either python scripts to build a screengrab map can be fired, or umap files can be pulled and utilised </p>
+                <p> Visualise your pack list before you commit </p>
+                <p> In-built output log just for vault logging let's you check everything went as planned </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Loader -->
+<div  id="loader" class="container-fluid block block-zone-box-1">
+    <div class="container py-3" style="height: 35rem">
+        <div class="row">
+            <div class="col my-4">
+                <h3 class="font-weight-light text-secondary"> Easily browse and load asset packs through the Vault Loader UI (Browser UI Work-In-Progress)</h3>
+                <p> Recall any packaged asset packs from the Loader UI </p>
+                <p> Utilise metadata filtering to narrow the choice to just what you need </p>
+                <p> Powerful searchbar live-filters your list, to find what you need, quickly </p>
+                <p> View your assets as a gallery view or as a list, customise zoom-levels to what suites you best </p>
+
+            </div>
+           
+            <div class="col my-4">
+                
+                <a href="assets/images/LoaderUI.jpg" data-toggle="lightbox">
+                    <img src="assets/images/LoaderUI_min.jpg" class="rounded img-fluid" alt="LoaderUI">
+                </a>
+                
+                   
+
+
+                 
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- JSON -->
+<div class="container-fluid block block-zone-box-2" id="json">
+    <div class="container"">
+        <div class="row">
+            <div class="col my-4">
+                {% include json-carosel.html %}
+            </div>
+    
+            <div class="col my-4">
+                <h3 class="font-weight-light m-3 text-light"> Configure everything through JSON </h3>
+                <p> Vault settings are broken down into local user settings, and global cross-project settings, allowing any sized team to work efficently without having to re-set things up between projects </p>
+                <p> The local settings live with the plugin, and define the local users choices, as well as the global file locations </p>
+                <p> The global settings define the project-agnostic rules, such as the library location </p>
+                <p> The Tag pool is also saved as a JSON file, making it easy to modify by hand if required, such as during a re-organise, or if a bad tag was added </p>
+                <p> Metadata for all your packages is written out as .meta files, which is a json formatted document with all the information of the asset pack </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Misc- Python -->
+<div class="container-fluid block block-zone-box-1" id="misc">
+    <div class="container py-3">
+        <h3 class="font-weight-light"> Full Python & Blueprint Scripting Support </h3>
+        <p> The UI handles everything you need, but if you wanted to automate or pipeline, The Vault also comes with a blueprint library, with full support for both Python and Editor Scripting through blueprint</p>
+
+        <br>
+        <h5 class="font-weight-light text-primary"> Example Python for publishing: </h3>
+        
+        <div class="card bg-dark">
+            <div class="card-body">
+                <code>
+                    <p> import unreal as ue </p>
+                    <p> selection = EditorUtilityLibrary.get_selected_assets() </p>
+                    <p> ue.VaultLibrary.package(selection, selection[0].get_name(), ue.VaultLibrary.get_developer_name(), "AutoPackaged By Python") </p>
+                </code>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Price Cards -->
+<div class="container-fluid block block-zone-box-2" id="price">
+    <div class="container py-5">
+        {% include price-cards.html %}
+    </div>
+</div>
+
+
+
+<!-- FAQ -->
+<div class="container-fluid block-zone-box-1" id="faq">
+    <div class="container">
+            <h3 class="font-weight-light py-3"> Frequently Asked Questions </h3>
+            {% include faq.html %}
+    </div>
+</div>

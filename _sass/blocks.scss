@@ -1,5 +1,6 @@
 .block {
-    min-height: 500px;
+    min-height: 300px;
+    padding: 30px;
 
 }
 
@@ -13,17 +14,6 @@
     color: white;
 }
 
-
-
-.block-content {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-
-}
 
 
 
